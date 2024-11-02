@@ -17,8 +17,8 @@ Entregar proyecto:
 
   Entonces tenemos que:
 
-  - [ ] Crear un repositorio llamado `"**html5_arquitectura_informacion**"`
-  - [ ] Crear dentro del repositorio un fichero llamado `"**index.html**"`
+  - [x] Crear un repositorio llamado `"**html5_arquitectura_informacion**"`
+  - [x] Crear dentro del repositorio un fichero llamado `"**index.html**"`
 
 ### **Objetivo**
 
@@ -132,7 +132,7 @@ Te ayuda a determinar si una etiqueta puede estar anidada en otra y la compatibi
 
 [The W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
 
-Validador de HTML, detecta errores tanto de sintáxis como semánticos y te los desglosa entre "avisos" y errores de estructura.
+Validador de HTML, detecta errores tanto de sintaxis como semánticos y te los desglosa entre "avisos" y errores de estructura.
 
 Además recomienda como solucionar cada uno de ellos.
 
