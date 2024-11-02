@@ -90,6 +90,31 @@
     </header>
 
     <main>
+      <aside id="sec_citas">
+        <!--barra lateral izquierda-->
+        <h2>Citas</h2>
+        <ul>
+          <li>
+            <q
+              >Los gatos son espíritus que se encuentran en la tierra. Un gato,
+              estoy seguro, podría caminar sobre una nube sin atravesarla</q
+            >-<cite>Jules Verne</cite>, escritor francés
+          </li>
+          <li>
+            El poeta y Duque francés <cite>Guillermo de Aquitania</cite> dijo
+            <q
+              >La elegancia quiso cuerpo y vida, por eso se transformó en
+              gato</q
+            >
+          </li>
+        </ul>
+        <img
+          src="./Assets/gato pared.png"
+          alt="gatos en pared"
+          height="300px"
+        />
+        <!--gato debe ir a la derecha de las citas-->
+      </aside>
       <article id="sec_articulo_dopcion">
         <h2>Adopción</h2>
         <section id="sec_importancia">
@@ -155,6 +180,7 @@
               alt="silueta tres gatos"
               width="250px"
             />
+            <!--debe quedar alineado en el centro con el blockquote-->
             <p>
               “Adoptar un gato no solo ayuda a uno de estos muchos animales que
               buscan un hogar, sino que también abre un espacio para que los
@@ -168,20 +194,158 @@
       </article>
     </main>
     <aside>
-      <h2>Citas célebres</h2>
-      <ul>
-        <li>
-          <q
-            >Los gatos son espíritus que se encuentran en la tierra. Un gato,
-            estoy seguro, podría caminar sobre una nube sin atravesarla</q
-          >-<cite>Jules Verne</cite>, escritor francés
-        </li>
-        <li>
-          El poeta y Duque francés <cite>Guillermo de Aquitania</cite> dijo
-          <q>La elegancia quiso cuerpo y vida, por eso se transformó en gato</q>
-        </li>
-      </ul>
-      <img src="./Assets/IMG_993.png" alt="gatos en vertical" height="300px" />
+      <!--Columna del lado derecho-->
+      <h2>¿Quieres ayudarnos?</h2>
+      <img
+        src="./Assets/gato asomandose.png"
+        alt="gato que se asoma"
+        width="200px"
+      />
+      <!--debe quedar como saliendo del fieldset-->
+      <form
+        action="https://www.AdopCat.com/procesar_canditados/"
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+        target="respuesta_formulario"
+      >
+        <fieldset>
+          <legend>
+            <strong>Datos para contactarte:</strong>
+          </legend>
+
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="name"
+            minlength="4"
+            maxlength="10"
+            placeholder="Introduce tu nombre"
+            title="Este campo no puede estar vacío"
+            required
+          /><br /><br />
+          <label for="apellido">Apellidos:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="last_name"
+            minlength="4"
+            maxlength="25"
+            placeholder="Introduce tu apellido"
+            title="Este campo no puede estar vacío"
+            required
+          /><br /><br />
+          <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+          <input
+            type="date"
+            id="fecha_nacimiento"
+            name="birthdate"
+            placeholder="Indica tu fecha de nacimiento"
+            title="Este campo no puede estar vacío"
+            required
+          /><br /><br />
+          <label for="edad">Edad:</label>
+          <input
+            type="number"
+            id="edad"
+            name="age"
+            min="18"
+            max="75"
+            step="1"
+            placeholder="Indica tu edad"
+            size="600"
+            required
+          /><br /><br />
+          <label for="correo">Email:</label>
+          <input
+            type="email"
+            id="correo"
+            name="email"
+            placeholder="Indica tu email"
+            required
+          /><br /><br />
+          <label for="telefono">Teléfono</label>
+          <input
+            type="number"
+            id="telefono"
+            name="phone"
+            maxlength="9"
+            placeholder="Indica tu telefono"
+            required
+          /><br /><br />
+          <label for="codigo_postal">Código postal:</label>
+          <input
+            type="text"
+            id="codigo_postal"
+            name="postal_code"
+            pattern="[0-9]{5}"
+            placeholder="Indica tu código postal"
+            required
+          /><br /><br />
+          <label for="Participar_como">¿De qué forma quieres ayudarnos?</label>
+          <select
+            id="Participar_como"
+            name="participate_as"
+            title="Seleccione una opción"
+            required
+          >
+            <option value="">Selecciona una opción</option>
+            <option value="Adopción">Adopción</option>
+            <option value="Acogida">Acogida</option>
+            <option value="Voluntariado">Voluntariado</option></select
+          ><br /><br />
+          <label>El gato que buscas debe ser:</label>
+          <input
+            type="radio"
+            id="adulto"
+            name="edad_gato"
+            value="adulto"
+            checked
+          />
+          <label for="adulto">Adulto</label>
+          <input type="radio" id="cachorro" name="edad_gato" value="cachorro" />
+          <label for="cachorro">Cachorro</label><br /><br />
+
+          <button type="submit">
+            <img
+              src="./Assets/aporte.png"
+              alt="boton para adoptar"
+              height="40px"
+              title="Haz click para enviar tus datos!"
+            /></button
+          ><br /><br /><br />
+          <iframe
+            name="respuesta_formulario"
+            height="200px"
+            src="./Assets/gato en ordenador.png"
+          ></iframe>
+        </fieldset>
+      </form>
     </aside>
+
+    <footer id="footer">
+      <p>© 2024 AdopCat. Todos los derechos reservados.</p>
+      <nav>
+        <a href="https://www.AdopCat.com/Contactanos/"
+          ><img
+            src="./Assets/aporte1.png"
+            alt="contacto"
+            height="25px"
+          />Contáctanos</a
+        >
+        <div class="social_media">
+          <a href="https://www.facebook.com/AdopCat/" target="_blank"
+            ><img
+              src="./Assets/social media/face azul.png"
+              alt="faceCat"
+              height="50px"
+          /></a>
+          <a href="https://www.instagram.com/AdopCat/" target="_blank"
+            ><img src="./Assets/social media/insta azul.png" alt="instaCat"
+            height="50px/>"</a
+          >
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
