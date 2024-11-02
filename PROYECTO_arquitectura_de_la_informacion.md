@@ -2,8 +2,8 @@
 
 Entregar proyecto:
 
-- Destinatario: desarrollowebfp@thepower.education
-- Asunto: Proyecto Arquitectura de la información - Adriana De Sá Rodriguez Díaz
+- Destinatario: --------
+- Asunto: Proyecto Arquitectura de la información - Mi nombre
 
 ## Pautas del proyecto:
 
